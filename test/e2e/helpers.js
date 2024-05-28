@@ -1184,9 +1184,6 @@ module.exports = {
   openActionMenuAndStartSendFlow,
   getCleanAppState,
   editGasFeeForm,
-<<<<<<< HEAD
   clickNestedButton,
-=======
   defaultGanacheOptionsForType2Transactions,
->>>>>>> 162b2748da (wip)
 };
