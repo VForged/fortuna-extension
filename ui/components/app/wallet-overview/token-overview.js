@@ -52,6 +52,7 @@ import { Icon, IconName } from '../../component-library';
 import { IconColor } from '../../../helpers/constants/design-system';
 
 import { useIsOriginalTokenSymbol } from '../../../hooks/useIsOriginalTokenSymbol';
+import { getIsBridgeEnabled } from '../../../ducks/bridge/selectors';
 import WalletOverview from './wallet-overview';
 
 const TokenOverview = ({ className, token }) => {
@@ -82,6 +83,8 @@ const TokenOverview = ({ className, token }) => {
   const isBridgeChain = useSelector(getIsBridgeChain);
   const isBuyableChain = useSelector(getIsBuyableChain);
   const metaMetricsId = useSelector(getMetaMetricsId);
+
+  const bridgeEnabled = useSelector(getIsBridgeEnabled);
 
   const { openBuyCryptoInPdapp } = useRamps();
   ///: END:ONLY_INCLUDE_IF
