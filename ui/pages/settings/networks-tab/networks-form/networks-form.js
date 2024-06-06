@@ -542,7 +542,7 @@ const NetworksForm = ({
       setWarnings({
         ...warnings,
         chainId: chainIdWarning,
-        ticker: tickerWarning,
+        // ticker: tickerWarning,
       });
     }
 
@@ -716,7 +716,8 @@ const NetworksForm = ({
           }}
           titleText={t('networkName')}
           value={networkName}
-          disabled={viewOnly}
+          // disabled={viewOnly}
+          disabled={viewOnly || !addNewNetwork || addNewNetwork} //vaival
           dataTestId="network-form-network-name"
         />
         <FormField
@@ -731,7 +732,8 @@ const NetworksForm = ({
               ? rpcUrl.replace(`/v3/${infuraProjectId}`, '')
               : rpcUrl
           }
-          disabled={viewOnly}
+          // disabled={viewOnly}
+          disabled={viewOnly || !addNewNetwork || addNewNetwork} //vaival
           dataTestId="network-form-rpc-url"
         />
         <FormField
@@ -744,7 +746,8 @@ const NetworksForm = ({
           }}
           titleText={t('chainId')}
           value={chainId}
-          disabled={viewOnly}
+          // disabled={viewOnly}
+          disabled={viewOnly || !addNewNetwork || addNewNetwork} //vaival
           tooltipText={viewOnly ? null : t('networkSettingsChainIdDescription')}
           dataTestId="network-form-chain-id"
         />
@@ -792,7 +795,8 @@ const NetworksForm = ({
             'data-testid': 'network-form-ticker-input',
           }}
           value={ticker}
-          disabled={viewOnly}
+          // disabled={viewOnly}
+          disabled={viewOnly || !addNewNetwork || addNewNetwork} //vaival
         />
         {warnings.ticker?.msg ? (
           <HelpText
@@ -812,7 +816,8 @@ const NetworksForm = ({
           titleText={t('blockExplorerUrl')}
           titleUnit={t('optionalWithParanthesis')}
           value={blockExplorerUrl}
-          disabled={viewOnly}
+          // disabled={viewOnly}
+          disabled={viewOnly || !addNewNetwork || addNewNetwork} //vaival
           autoFocus={window.location.hash.split('#')[2] === 'blockExplorerUrl'}
           dataTestId="network-form-block-explorer-url"
         />
@@ -825,12 +830,12 @@ const NetworksForm = ({
       >
         {!viewOnly && (
           <>
-            {deletable && (
+            {/* {deletable && (
               <Button type="danger" onClick={onDelete}>
                 {t('delete')}
               </Button>
-            )}
-            <Button
+            )} */}
+            {/* <Button
               type="secondary"
               onClick={onCancel}
               disabled={stateUnchanged}
@@ -843,7 +848,7 @@ const NetworksForm = ({
               onClick={onSubmit}
             >
               {t('save')}
-            </Button>
+            </Button> */}
           </>
         )}
       </div>
