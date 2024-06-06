@@ -32,9 +32,9 @@ import {
 } from '../../store/actions';
 import { getFirstTimeFlowTypeRouteAfterUnlock } from '../../selectors';
 // import { MetaMetricsContext } from '../../contexts/metametrics';
-import Button from '../../components/ui/button';
+// import Button from '../../components/ui/button';
 import RevealSRPModal from '../../components/app/reveal-SRP-modal';
-import { useI18nContext } from '../../hooks/useI18nContext';
+// import { useI18nContext } from '../../hooks/useI18nContext';
 // import {
 //   MetaMetricsEventCategory,
 //   MetaMetricsEventName,
@@ -65,7 +65,7 @@ export default function OnboardingFlow() {
   const dispatch = useDispatch();
   const { pathname, search } = useLocation();
   const history = useHistory();
-  const t = useI18nContext();
+  // const t = useI18nContext();
   const completedOnboarding = useSelector(getCompletedOnboarding);
   const nextRoute = useSelector(getFirstTimeFlowTypeRouteAfterUnlock);
   const isFromReminder = new URLSearchParams(search).get('isFromReminder');

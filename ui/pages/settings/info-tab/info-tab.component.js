@@ -130,6 +130,7 @@ export default class InfoTab extends PureComponent {
           <Button
             type="link"
             // href={SUPPORT_LINK}
+            href='https://support.vulcanforged.com/hc/en-us'
             target="_blank"
             rel="noopener noreferrer"
             className="info-tab__link-text"
@@ -157,6 +158,7 @@ export default class InfoTab extends PureComponent {
           <Button
             type="link"
             // href={siteUrl}
+            href='https://fortuna.elysiumchain.tech/'
             target="_blank"
             rel="noopener noreferrer"
             className="info-tab__link-text"
@@ -168,6 +170,7 @@ export default class InfoTab extends PureComponent {
           <Button
             type="link"
             // href={SUPPORT_REQUEST_LINK}
+            href='https://support.vulcanforged.com/hc/en-us'
             target="_blank"
             rel="noopener noreferrer"
             className="info-tab__link-text"

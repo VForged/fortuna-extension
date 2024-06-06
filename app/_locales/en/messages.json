@@ -563,7 +563,7 @@
     "message": "Basic functionality is off"
   },
   "basicConfigurationDescription": {
-    "message": "MetaMask offers basic features like token details and gas settings through internet services. When you use internet services, your IP address is shared, in this case with MetaMask. This is just like when you visit any website. MetaMask uses this data temporarily and never sells your data. You can use a VPN or turn off these services, but it may affect your MetaMask experience. To learn more read our $1.",
+    "message": "Fortuna offers basic features like token details and gas settings through internet services. When you use internet services, your IP address is shared, in this case with Fortuna. This is just like when you visit any website. Fortuna uses this data temporarily and never sells your data. You can use a VPN or turn off these services, but it may affect your Fortuna experience. To learn more read our $1.",
     "description": "$1 is to be replaced by the message for privacyMsg, and will link to https://consensys.io/privacy-policy"
   },
   "basicConfigurationLabel": {
@@ -573,10 +573,10 @@
     "message": "I understand and want to continue"
   },
   "basicConfigurationModalDisclaimerOff": {
-    "message": "This means you won't fully optimize your time on MetaMask. Basic features (like token details, optimal gas settings, and others) won't be available to you."
+    "message": "This means you won't fully optimize your time on Fortuna. Basic features (like token details, optimal gas settings, and others) won't be available to you."
   },
   "basicConfigurationModalDisclaimerOn": {
-    "message": "To optimize your time on MetaMask, you’ll need to turn on this feature. Basic functions (like token details, optimal gas settings, and others) are important to the web3 experience."
+    "message": "To optimize your time on Fortuna, you’ll need to turn on this feature. Basic functions (like token details, optimal gas settings, and others) are important to the web3 experience."
   },
   "basicConfigurationModalHeadingOff": {
     "message": "Turn off basic functionality"
@@ -2229,7 +2229,7 @@
     "message": "Install origin"
   },
   "installRequest": {
-    "message": "Add to MetaMask"
+    "message": "Add to Fortuna"
   },
   "installedOn": {
     "message": "Installed on $1",
@@ -2994,7 +2994,7 @@
     "message": "Webcam not found"
   },
   "nonCustodialAccounts": {
-    "message": "MetaMask Institutional allows you to use non-custodial accounts, if you plan to use these accounts backup the Secret Recovery Phrase."
+    "message": "Fortuna Institutional allows you to use non-custodial accounts, if you plan to use these accounts backup the Secret Recovery Phrase."
   },
   "nonce": {
     "message": "Nonce"
@@ -3246,16 +3246,16 @@
     "message": "This data is aggregated and is therefore anonymous for the purposes of General Data Protection Regulation (EU) 2016/679."
   },
   "onboardingMetametricsDescription": {
-    "message": "We’d like to gather basic usage and diagnostics data to improve MetaMask. Know that we never sell the data you provide here."
+    "message": "We’d like to gather basic usage and diagnostics data to improve Fortuna. Know that we never sell the data you provide here."
   },
   "onboardingMetametricsDescription2": {
     "message": "When we gather metrics, it will always be..."
   },
   "onboardingMetametricsDescription2Legacy": {
-    "message": "MetaMask will..."
+    "message": "Fortuna will..."
   },
   "onboardingMetametricsDescriptionLegacy": {
-    "message": "MetaMask would like to gather usage data to better understand how our users interact with MetaMask. This data will be used to provide the service, which includes improving the service based on your use."
+    "message": "Fortuna would like to gather usage data to better understand how our users interact with Fortuna. This data will be used to provide the service, which includes improving the service based on your use."
   },
 
   "onboardingMetametricsDisagree": {
@@ -3266,7 +3266,7 @@
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsLegacy": {
-    "message": "* When you use Infura as your default RPC provider in MetaMask, Infura will collect your IP address and your Ethereum wallet address when you send a transaction. We don’t store this information in a way that allows our systems to associate those two pieces of data. For more information on how MetaMask and Infura interact from a data collection perspective, see our update $1. For more information on our privacy practices in general, see our $2.",
+    "message": "* When you use Infura as your default RPC provider in Fortuna, Infura will collect your IP address and your Ethereum wallet address when you send a transaction. We don’t store this information in a way that allows our systems to associate those two pieces of data. For more information on how Fortuna and Infura interact from a data collection perspective, see our update $1. For more information on our privacy practices in general, see our $2.",
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicyLink`, $2 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsPolicy": {
