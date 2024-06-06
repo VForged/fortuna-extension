@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [12.0.0]
+
 ## [11.16.3]
 ### Changed
 - Update Trezor logo ([#24343]https://github.com/MetaMask/metamask-extension/pull/24343)
@@ -4760,7 +4762,8 @@ Update styles and spacing on the critical error page  ([#20350](https://github.c
 - Added the ability to restore accounts from seed words.
 
 
-[Unreleased]: https://github.com/MetaMask/metamask-extension/compare/v11.16.3...HEAD
+[Unreleased]: https://github.com/MetaMask/metamask-extension/compare/v12.0.0...HEAD
+[12.0.0]: https://github.com/MetaMask/metamask-extension/compare/v11.16.3...v12.0.0
 [11.16.3]: https://github.com/MetaMask/metamask-extension/compare/v11.16.2...v11.16.3
 [11.16.2]: https://github.com/MetaMask/metamask-extension/compare/v11.16.1...v11.16.2
 [11.16.1]: https://github.com/MetaMask/metamask-extension/compare/v11.16.0...v11.16.1
