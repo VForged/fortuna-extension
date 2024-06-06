@@ -787,7 +787,7 @@
         "@ethereumjs/tx>@ethereumjs/util": true,
         "@metamask-institutional/sdk": true,
         "@metamask-institutional/transaction-update>@metamask-institutional/websocket-client": true,
-        "@metamask-institutional/transaction-update>@metamask/obs-store": true,
+        "@metamask/obs-store": true,
         "webpack>events": true
       }
     },
@@ -2287,7 +2287,7 @@
         "@metamask/smart-transactions-controller>@metamask/transaction-controller>@metamask/gas-fee-controller": true,
         "@metamask/smart-transactions-controller>@metamask/transaction-controller>async-mutex": true,
         "@metamask/smart-transactions-controller>@metamask/transaction-controller>eth-method-registry": true,
-        "@metamask/transaction-controller>nonce-tracker": true,
+        "@metamask/transaction-controller>@metamask/nonce-tracker": true,
         "@metamask/utils": true,
         "bn.js": true,
         "browserify>buffer": true,
@@ -2657,33 +2657,11 @@
     },
     "@metamask/snaps-sdk>@metamask/key-tree": {
       "packages": {
+        "@metamask/message-signing-snap>@noble/curves": true,
         "@metamask/scure-bip39": true,
-        "@metamask/snaps-sdk>@metamask/key-tree>@metamask/utils": true,
-        "@metamask/snaps-sdk>@metamask/key-tree>@noble/ed25519": true,
+        "@metamask/utils": true,
         "@metamask/utils>@scure/base": true,
-        "@noble/hashes": true,
-        "eth-lattice-keyring>@noble/secp256k1": true
-      }
-    },
-    "@metamask/snaps-sdk>@metamask/key-tree>@metamask/utils": {
-      "globals": {
-        "TextDecoder": true,
-        "TextEncoder": true
-      },
-      "packages": {
-        "@noble/hashes": true,
-        "browserify>buffer": true,
-        "nock>debug": true,
-        "semver": true,
-        "superstruct": true
-      }
-    },
-    "@metamask/snaps-sdk>@metamask/key-tree>@noble/ed25519": {
-      "globals": {
-        "crypto": true
-      },
-      "packages": {
-        "browserify>browser-resolve": true
+        "@noble/hashes": true
       }
     },
     "@metamask/snaps-sdk>fast-xml-parser": {
@@ -2841,12 +2819,11 @@
     "@metamask/transaction-controller>@metamask/nonce-tracker": {
       "packages": {
         "@ethersproject/providers": true,
-        "@metamask/eth-token-tracker>eth-block-tracker": true,
-        "@metamask/transaction-controller>nonce-tracker>async-mutex": true,
+        "@metamask/transaction-controller>@metamask/nonce-tracker>async-mutex": true,
         "browserify>assert": true
       }
     },
-    "@metamask/transaction-controller>nonce-tracker>async-mutex": {
+    "@metamask/transaction-controller>@metamask/nonce-tracker>async-mutex": {
       "globals": {
         "clearTimeout": true,
         "setTimeout": true
@@ -3895,14 +3872,6 @@
       "globals": {
         "TextEncoder": true,
         "crypto": true
-      }
-    },
-    "eth-lattice-keyring>@noble/secp256k1": {
-      "globals": {
-        "crypto": true
-      },
-      "packages": {
-        "browserify>browser-resolve": true
       }
     },
     "eth-lattice-keyring>gridplus-sdk": {
