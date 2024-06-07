@@ -2586,16 +2586,16 @@
     "message": "此数据是汇总数据，因而可以保持匿名，以遵守《通用数据保护条例》（欧盟）2016/679。"
   },
   "onboardingMetametricsDescription2Legacy": {
-    "message": "MetaMask 将会......"
+    "message": "Fortuna 将会......"
   },
   "onboardingMetametricsDescriptionLegacy": {
-    "message": "MetaMask 希望收集使用数据，以更好地了解我们的用户如何与 MetaMask 交互。这些数据将用于提供服务，包括根据您的使用情况改进服务。"
+    "message": "Fortuna 希望收集使用数据，以更好地了解我们的用户如何与 Fortuna 交互。这些数据将用于提供服务，包括根据您的使用情况改进服务。"
   },
   "onboardingMetametricsDisagree": {
     "message": "不，谢谢"
   },
   "onboardingMetametricsInfuraTermsLegacy": {
-    "message": "* 如您在 MetaMask中 使用 Infura 作为默认的 RPC 提供商，Infura 将在您发送交易时收集您的 IP 地址和以太坊钱包地址。我们不会以允许系统将这两项数据关联起来的方式存储这些信息。如需从数据收集角度进一步了解 MetaMask 和 Infura 如何进行交互，请参阅我们的更新版 $1。如需进一步了解我们的一般隐私准则，请参阅我们的 $2。",
+    "message": "* 如您在 Fortuna中 使用 Infura 作为默认的 RPC 提供商，Infura 将在您发送交易时收集您的 IP 地址和以太坊钱包地址。我们不会以允许系统将这两项数据关联起来的方式存储这些信息。如需从数据收集角度进一步了解 Fortuna 和 Infura 如何进行交互，请参阅我们的更新版 $1。如需进一步了解我们的一般隐私准则，请参阅我们的 $2。",
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicyLink`, $2 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsPolicyLegacy": {

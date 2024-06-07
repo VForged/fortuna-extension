@@ -2586,16 +2586,16 @@
     "message": "Data ini dikumpulkan sehingga bersifat anonim untuk tujuan Peraturan Perlindungan Data Umum (UE) 2016/679."
   },
   "onboardingMetametricsDescription2Legacy": {
-    "message": "MetaMask akan..."
+    "message": "Fortuna akan..."
   },
   "onboardingMetametricsDescriptionLegacy": {
-    "message": "MetaMask ingin mengumpulkan data penggunaan untuk lebih memahami cara pengguna kami berinteraksi dengan MetaMask. Data ini akan digunakan untuk menyediakan layanan, termasuk meningkatkan layanan berdasarkan penggunaan Anda."
+    "message": "Fortuna ingin mengumpulkan data penggunaan untuk lebih memahami cara pengguna kami berinteraksi dengan Fortuna. Data ini akan digunakan untuk menyediakan layanan, termasuk meningkatkan layanan berdasarkan penggunaan Anda."
   },
   "onboardingMetametricsDisagree": {
     "message": "Tidak, terima kasih"
   },
   "onboardingMetametricsInfuraTermsLegacy": {
-    "message": "* Saat Anda menggunakan Infura sebagai penyedia RPC awal di MetaMask, Infura akan mengumpulkan alamat IP dan alamat dompet Ethereum Anda saat mengirim transaksi. Kami tidak menyimpan informasi ini dengan cara yang memungkinkan sistem kami menghubungkan kedua bagian data tersebut. Untuk informasi lebih lanjut seputar cara MetaMask dan Infura berinteraksi dari perspektif pengumpulan data, lihat pembaruan $1. Untuk informasi lebih lanjut seputar praktik privasi kami secara umum, lihat $2 kami.",
+    "message": "* Saat Anda menggunakan Infura sebagai penyedia RPC awal di Fortuna, Infura akan mengumpulkan alamat IP dan alamat dompet Ethereum Anda saat mengirim transaksi. Kami tidak menyimpan informasi ini dengan cara yang memungkinkan sistem kami menghubungkan kedua bagian data tersebut. Untuk informasi lebih lanjut seputar cara Fortuna dan Infura berinteraksi dari perspektif pengumpulan data, lihat pembaruan $1. Untuk informasi lebih lanjut seputar praktik privasi kami secara umum, lihat $2 kami.",
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicyLink`, $2 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsPolicyLegacy": {

@@ -17,7 +17,7 @@ import {
 import { INSUFFICIENT_FUNDS_ERROR_KEY } from '../../../../helpers/constants/error-keys';
 import { useGasFeeContext } from '../../../../contexts/gasFee';
 import AppLoadingSpinner from '../../../../components/app/app-loading-spinner';
-import ZENDESK_URLS from '../../../../helpers/constants/zendesk-url';
+// import ZENDESK_URLS from '../../../../helpers/constants/zendesk-url';
 import { Text } from '../../../../components/component-library';
 import EditGasItem from './edit-gas-item';
 import NetworkStatistics from './network-statistics';
@@ -100,7 +100,7 @@ const EditGasFeePopover = () => {
                     key="learnMoreLink"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href={ZENDESK_URLS.USER_GUIDE_GAS}
+                    // href={ZENDESK_URLS.USER_GUIDE_GAS}
                   >
                     {t('learnMore')}
                   </a>,

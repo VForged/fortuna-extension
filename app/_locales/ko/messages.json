@@ -2586,16 +2586,16 @@
     "message": "이 데이터는 집계 처리된 정보이며 일반 데이터 보호 규정 (EU) 2016/679의 목적에 따라 익명으로 관리됩니다."
   },
   "onboardingMetametricsDescription2Legacy": {
-    "message": "MetaMask에서는..."
+    "message": "Fortuna에서는..."
   },
   "onboardingMetametricsDescriptionLegacy": {
-    "message": "MetaMask는 사용자가 MetaMask를 어떻게 사용하는지 이해하기 위해 기본적인 사용 데이터를 수집하고자 합니다. 이 데이터는 사용자 경험을 통한 서비스 개선에 사용됩니다."
+    "message": "Fortuna는 사용자가 Fortuna를 어떻게 사용하는지 이해하기 위해 기본적인 사용 데이터를 수집하고자 합니다. 이 데이터는 사용자 경험을 통한 서비스 개선에 사용됩니다."
   },
   "onboardingMetametricsDisagree": {
     "message": "괜찮습니다"
   },
   "onboardingMetametricsInfuraTermsLegacy": {
-    "message": "* MetaMask에서 Infura를 기본 RPC 공급업체로 이용하는 경우, 트랜잭션 전송 시 Infura가 IP 주소와 이더리움 지갑 주소 정보를 수집합니다. MetaMask는 해당 두 정보를 연계할 수 있는 방식으로 정보를 저장하지 않습니다. 데이터 수집 관점에서 MetaMask와 Infura가 인터렉션하는 방법에 대한 자세한 내용은 $1 업데이트를 참조하세요. 일반적인 개인정보 처리방침에 대한 자세한 내용은 $2에서 확인하세요.",
+    "message": "* Fortuna에서 Infura를 기본 RPC 공급업체로 이용하는 경우, 트랜잭션 전송 시 Infura가 IP 주소와 이더리움 지갑 주소 정보를 수집합니다. Fortuna는 해당 두 정보를 연계할 수 있는 방식으로 정보를 저장하지 않습니다. 데이터 수집 관점에서 Fortuna와 Infura가 인터렉션하는 방법에 대한 자세한 내용은 $1 업데이트를 참조하세요. 일반적인 개인정보 처리방침에 대한 자세한 내용은 $2에서 확인하세요.",
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicyLink`, $2 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsPolicyLegacy": {

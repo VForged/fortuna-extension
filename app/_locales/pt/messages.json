@@ -2586,16 +2586,16 @@
     "message": "Esses dados são agregados e, portanto, anônimos para os fins do Regulamento Geral sobre a Proteção de Dados (UE) de 2016/679."
   },
   "onboardingMetametricsDescription2Legacy": {
-    "message": "A MetaMask..."
+    "message": "A Fortuna..."
   },
   "onboardingMetametricsDescriptionLegacy": {
-    "message": "A MetaMask gostaria de reunir dados de uso para entender melhor como nossos usuários interagem com a MetaMask. Esses dados serão usados para prestar o serviço, o que inclui melhorá-lo com base em seu uso."
+    "message": "A Fortuna gostaria de reunir dados de uso para entender melhor como nossos usuários interagem com a Fortuna. Esses dados serão usados para prestar o serviço, o que inclui melhorá-lo com base em seu uso."
   },
   "onboardingMetametricsDisagree": {
     "message": "Não, obrigado"
   },
   "onboardingMetametricsInfuraTermsLegacy": {
-    "message": "* Quando você usa a Infura como seu provedor RPC padrão na MetaMask, a Infura coleta seu endereço IP e da carteira de Ethereum quando você envia uma transação. Não armazenamos essas informações de forma que permita aos nossos sistemas cruzarem os dois fragmentos de dados. Para obter mais informações sobre como a MetaMask e a Infura interagem da perspectiva da coleta de dados, veja nossa atualização $1. Para obter mais informações sobre nossas práticas de privacidade em geral, veja nossa $2.",
+    "message": "* Quando você usa a Infura como seu provedor RPC padrão na Fortuna, a Infura coleta seu endereço IP e da carteira de Ethereum quando você envia uma transação. Não armazenamos essas informações de forma que permita aos nossos sistemas cruzarem os dois fragmentos de dados. Para obter mais informações sobre como a Fortuna e a Infura interagem da perspectiva da coleta de dados, veja nossa atualização $1. Para obter mais informações sobre nossas práticas de privacidade em geral, veja nossa $2.",
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicyLink`, $2 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsPolicyLegacy": {
