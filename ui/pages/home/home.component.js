@@ -76,11 +76,11 @@ import {
   ///: END:ONLY_INCLUDE_IF
 } from '../../helpers/constants/routes';
 // import ZENDESK_URLS from '../../helpers/constants/zendesk-url';
-// import {
-//   ///: BEGIN:ONLY_INCLUDE_IF(build-main)
-//   SUPPORT_LINK,
-//   ///: END:ONLY_INCLUDE_IF
-// } from '../../../shared/lib/ui-utils';
+import {
+  ///: BEGIN:ONLY_INCLUDE_IF(build-main)
+  SUPPORT_LINK,
+  ///: END:ONLY_INCLUDE_IF
+} from '../../../shared/lib/ui-utils';
 ///: BEGIN:ONLY_INCLUDE_IF(build-beta)
 import BetaHomeFooter from './beta/beta-home-footer.component';
 ///: END:ONLY_INCLUDE_IF
@@ -430,7 +430,7 @@ export default class Home extends PureComponent {
         category: MetaMetricsEventCategory.Home,
         event: MetaMetricsEventName.SupportLinkClicked,
         properties: {
-          // url: SUPPORT_LINK,
+          url: SUPPORT_LINK,
         },
       },
       {
@@ -979,7 +979,7 @@ export default class Home extends PureComponent {
                         size={Size.MD}
                         startIconName={IconName.MessageQuestion}
                         data-testid="need-help-link"
-                        // href={SUPPORT_LINK}
+                        href={SUPPORT_LINK}
                         display={Display.Flex}
                         justifyContent={JustifyContent.center}
                         paddingLeft={4}
@@ -1009,7 +1009,7 @@ export default class Home extends PureComponent {
                       size={Size.MD}
                       startIconName={IconName.MessageQuestion}
                       data-testid="need-help-link"
-                      // href={SUPPORT_LINK}
+                      href={SUPPORT_LINK}
                       display={Display.Flex}
                       justifyContent={JustifyContent.center}
                       paddingLeft={4}
@@ -1038,7 +1038,7 @@ export default class Home extends PureComponent {
                       size={Size.MD}
                       startIconName={IconName.MessageQuestion}
                       data-testid="need-help-link"
-                      // href={SUPPORT_LINK}
+                      href={SUPPORT_LINK}
                       display={Display.Flex}
                       justifyContent={JustifyContent.center}
                       marginBottom={4}

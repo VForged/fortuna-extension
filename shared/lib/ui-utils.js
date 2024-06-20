@@ -1,6 +1,8 @@
 // no destructuring as process.env detection stops working
 // eslint-disable-next-line prefer-destructuring
-export const SUPPORT_LINK = process.env.SUPPORT_LINK;
+// export const SUPPORT_LINK = process.env.SUPPORT_LINK;
+export const SUPPORT_LINK = 'https://support.vulcanforged.com/hc/en-us'; //Vaival
+
 
 export const COINGECKO_LINK = 'https://www.coingecko.com/';
 export const CRYPTOCOMPARE_LINK = 'https://www.cryptocompare.com/';

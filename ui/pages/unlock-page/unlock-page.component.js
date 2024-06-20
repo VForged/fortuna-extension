@@ -210,7 +210,7 @@ export default class UnlockPage extends Component {
           <div className="unlock-page__support">
             {t('needHelp', [
               <a
-                // href={SUPPORT_LINK}
+                href={SUPPORT_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 key="need-help-link"
@@ -220,7 +220,7 @@ export default class UnlockPage extends Component {
                       category: MetaMetricsEventCategory.Navigation,
                       event: MetaMetricsEventName.SupportLinkClicked,
                       properties: {
-                        // url: SUPPORT_LINK,
+                        url: SUPPORT_LINK,
                       },
                     },
                     {

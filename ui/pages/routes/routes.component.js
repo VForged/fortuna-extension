@@ -30,7 +30,9 @@ import Loading from '../../components/ui/loading-screen';
 import LoadingNetwork from '../../components/app/loading-network-screen';
 import { Modal } from '../../components/app/modals';
 import Alert from '../../components/ui/alert';
-import { SURVEY_LINK, PRIVACY_POLICY_LINK } from '../../../shared/lib/ui-utils';
+// import { SURVEY_LINK, PRIVACY_POLICY_LINK } from '../../../shared/lib/ui-utils';
+import { SURVEY_LINK} from '../../../shared/lib/ui-utils';
+
 import {
   AppHeader,
   AccountListMenu,
@@ -209,7 +211,7 @@ export default class Routes extends Component {
     newPrivacyPolicyToastShownDate: PropTypes.number,
     setSurveyLinkLastClickedOrClosed: PropTypes.func.isRequired,
     setNewPrivacyPolicyToastShownDate: PropTypes.func.isRequired,
-    setNewPrivacyPolicyToastClickedOrClosed: PropTypes.func.isRequired,
+    // setNewPrivacyPolicyToastClickedOrClosed: PropTypes.func.isRequired,
     ///: BEGIN:ONLY_INCLUDE_IF(keyring-snaps)
     isShowKeyringSnapRemovalResultModal: PropTypes.bool.isRequired,
     hideShowKeyringSnapRemovalResultModal: PropTypes.func.isRequired,
@@ -654,18 +656,18 @@ export default class Routes extends Component {
       addPermittedAccount,
       showSurveyToast,
       showConnectAccountToast,
-      showPrivacyPolicyToast,
-      newPrivacyPolicyToastShownDate,
+      // showPrivacyPolicyToast,
+      // newPrivacyPolicyToastShownDate,
       clearSwitchedNetworkDetails,
       setSurveyLinkLastClickedOrClosed,
-      setNewPrivacyPolicyToastClickedOrClosed,
+      // setNewPrivacyPolicyToastClickedOrClosed,
       setSwitchedNetworkNeverShowMessage,
       switchedNetworkDetails,
     } = this.props;
 
     const showAutoNetworkSwitchToast = this.getShowAutoNetworkSwitchTest();
-    const isPrivacyToastRecent = this.getIsPrivacyToastRecent();
-    const isPrivacyToastNotShown = !newPrivacyPolicyToastShownDate;
+    // const isPrivacyToastRecent = this.getIsPrivacyToastRecent();
+    // const isPrivacyToastNotShown = !newPrivacyPolicyToastShownDate;
 
     return (
       <ToastContainer>

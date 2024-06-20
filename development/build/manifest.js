@@ -13,8 +13,8 @@ const { loadBuildTypesConfig } = require('../lib/build-type');
 
 const { TASKS, ENVIRONMENT } = require('./constants');
 const { createTask, composeSeries } = require('./task');
-const { getEnvironment, getBuildName } = require('./utils');
-// const { getEnvironment } = require('./utils');
+// const { getEnvironment, getBuildName } = require('./utils');
+const { getEnvironment } = require('./utils');
 
 
 module.exports = createManifestTasks;
