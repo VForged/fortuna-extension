@@ -15,7 +15,7 @@ import {
   TextAlign,
 } from '../../../../helpers/constants/design-system';
 import { REVEAL_SEED_ROUTE } from '../../../../helpers/constants/routes';
-import ZENDESK_URLS from '../../../../helpers/constants/zendesk-url';
+// import ZENDESK_URLS from '../../../../helpers/constants/zendesk-url';
 import { useI18nContext } from '../../../../hooks/useI18nContext';
 import {
   ButtonSize,
@@ -51,11 +51,11 @@ const rightAnswerIcon = (
   />
 );
 
-const openSupportArticle = (): void => {
-  global.platform.openTab({
-    url: ZENDESK_URLS.PASSWORD_AND_SRP_ARTICLE,
-  });
-};
+// const openSupportArticle = (): void => {
+//   global.platform.openTab({
+//     url: ZENDESK_URLS.PASSWORD_AND_SRP_ARTICLE,
+//   });
+// };
 
 // TODO: Replace `any` with type
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -143,11 +143,11 @@ export default function SRPQuiz(props: any) {
             size: ButtonSize.Lg,
             'data-testid': 'srp-quiz-continue',
           },
-          {
-            label: t('learnMoreUpperCase'),
-            onClick: openSupportArticle,
-            variant: ButtonVariant.Link,
-          },
+          // {
+          //   label: t('learnMoreUpperCase'),
+          //   onClick: openSupportArticle,
+          //   variant: ButtonVariant.Link,
+          // },
         ]}
       />
     );
@@ -198,11 +198,11 @@ export default function SRPQuiz(props: any) {
             size: ButtonSize.Lg,
             'data-testid': 'srp-quiz-wrong-answer',
           },
-          {
-            label: t('learnMoreUpperCase'),
-            onClick: openSupportArticle,
-            variant: ButtonVariant.Link,
-          },
+          // {
+          //   label: t('learnMoreUpperCase'),
+          //   onClick: openSupportArticle,
+          //   variant: ButtonVariant.Link,
+          // },
         ]}
       />
     );
@@ -223,11 +223,11 @@ export default function SRPQuiz(props: any) {
             size: ButtonSize.Lg,
             'data-testid': 'srp-quiz-continue',
           },
-          {
-            label: t('learnMoreUpperCase'),
-            onClick: openSupportArticle,
-            variant: ButtonVariant.Link,
-          },
+          // {
+          //   label: t('learnMoreUpperCase'),
+          //   onClick: openSupportArticle,
+          //   variant: ButtonVariant.Link,
+          // },
         ]}
       />
     );
@@ -248,11 +248,11 @@ export default function SRPQuiz(props: any) {
             size: ButtonSize.Lg,
             'data-testid': 'srp-quiz-try-again',
           },
-          {
-            label: t('learnMoreUpperCase'),
-            onClick: openSupportArticle,
-            variant: ButtonVariant.Link,
-          },
+          // {
+          //   label: t('learnMoreUpperCase'),
+          //   onClick: openSupportArticle,
+          //   variant: ButtonVariant.Link,
+          // },
         ]}
       />
     );

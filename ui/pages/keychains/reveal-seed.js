@@ -35,7 +35,7 @@ import {
   Size,
   TextVariant,
 } from '../../helpers/constants/design-system';
-import ZENDESK_URLS from '../../helpers/constants/zendesk-url';
+// import ZENDESK_URLS from '../../helpers/constants/zendesk-url';
 import { useI18nContext } from '../../hooks/useI18nContext';
 import { requestRevealSeedWords } from '../../store/actions';
 
@@ -339,7 +339,7 @@ export default function RevealSeedPage() {
             variant={BUTTON_VARIANT.LINK}
             size={BUTTON_SIZES.INHERIT}
             as="a"
-            href={ZENDESK_URLS.SECRET_RECOVERY_PHRASE}
+            // href={ZENDESK_URLS.SECRET_RECOVERY_PHRASE}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -361,7 +361,7 @@ export default function RevealSeedPage() {
             variant={BUTTON_VARIANT.LINK}
             size={BUTTON_SIZES.INHERIT}
             as="a"
-            href={ZENDESK_URLS.NON_CUSTODIAL_WALLET}
+            // href={ZENDESK_URLS.NON_CUSTODIAL_WALLET}
             target="_blank"
             rel="noopener noreferrer"
           >
