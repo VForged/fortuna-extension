@@ -143,9 +143,11 @@ function createManifestTasks({
     //   shouldIncludeSnow,
     //   shouldIncludeMV3: process.env.ENABLE_MV3,
     // });
+
     manifest.name = "Fortuna";
-    manifest.description =  `A Fortuna extension in your Browser`;
+    manifest.description =  `A Elysium Wallet in your Browser`;
     // manifest.description = `${environment} build from git id: ${gitRevisionStr}`;
+
   }
 
   // helper for merging obj value
