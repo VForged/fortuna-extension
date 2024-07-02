@@ -1095,7 +1095,7 @@ export default class SecurityTab extends PureComponent {
           {this.renderIpfsGatewayControl()}
         </div>
 
-        <span className="settings-page__security-tab-sub-header">
+        {/* <span className="settings-page__security-tab-sub-header">
           {this.context.t('tokenAutoDetection')}
         </span>
         <div className="settings-page__content-padded">
@@ -1103,7 +1103,7 @@ export default class SecurityTab extends PureComponent {
           {this.renderBatchAccountBalanceRequestsToggle()}
           {this.renderDisplayNftMediaToggle()}
           {this.renderNftDetectionToggle()}
-        </div>
+        </div> */}
 
         {petnamesEnabled && (
           <>

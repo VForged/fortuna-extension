@@ -91,12 +91,12 @@ export default function CreationSuccessful() {
         </li>
       </ul>
       <Box marginTop={6} className="creation-successful__actions">
-        <Button
+        {/* <Button
           type="link"
-          // onClick={() => history.push(ONBOARDING_PRIVACY_SETTINGS_ROUTE)}
+          onClick={() => history.push(ONBOARDING_PRIVACY_SETTINGS_ROUTE)}
         >
           {t('advancedConfiguration')}
-        </Button>
+        </Button> */}
         <Button
           data-testid="onboarding-complete-done"
           type="primary"

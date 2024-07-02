@@ -27,7 +27,7 @@ import {
 import { MenuItem } from '../../ui/menu';
 import { getEnvironmentType } from '../../../../app/scripts/lib/util';
 import { ENVIRONMENT_TYPE_FULLSCREEN } from '../../../../shared/constants/app';
-// import { SUPPORT_LINK } from '../../../../shared/lib/ui-utils';
+import { SUPPORT_LINK } from '../../../../shared/lib/ui-utils';
 ///: BEGIN:ONLY_INCLUDE_IF(build-beta,build-flask)
 // import { SUPPORT_REQUEST_LINK } from '../../../helpers/constants/common';
 ///: END:ONLY_INCLUDE_IF
@@ -101,7 +101,7 @@ export const GlobalMenu = ({ closeMenu, anchorElement, isOpen }) => {
   ///: END:ONLY_INCLUDE_IF
 
   let supportText = t('support');
-  // let supportLink = SUPPORT_LINK;
+  let supportLink = SUPPORT_LINK;
   ///: BEGIN:ONLY_INCLUDE_IF(build-beta,build-flask)
   supportText = t('needHelpSubmitTicket');
   // supportLink = SUPPORT_REQUEST_LINK;
@@ -299,25 +299,25 @@ export const GlobalMenu = ({ closeMenu, anchorElement, isOpen }) => {
       }
       <MenuItem
         iconName={IconName.MessageQuestion}
-        // onClick={() => {
-        //   global.platform.openTab({ url: supportLink });
-        //   trackEvent(
-        //     {
-        //       category: MetaMetricsEventCategory.Home,
-        //       event: MetaMetricsEventName.SupportLinkClicked,
-        //       properties: {
-        //         url: supportLink,
-        //         location: METRICS_LOCATION,
-        //       },
-        //     },
-        //     {
-        //       contextPropsIntoEventProperties: [
-        //         MetaMetricsContextProp.PageTitle,
-        //       ],
-        //     },
-        //   );
-        //   closeMenu();
-        // }}
+        onClick={() => {
+          global.platform.openTab({ url: supportLink });
+          // trackEvent(
+          //   {
+          //     category: MetaMetricsEventCategory.Home,
+          //     event: MetaMetricsEventName.SupportLinkClicked,
+          //     properties: {
+          //       url: supportLink,
+          //       location: METRICS_LOCATION,
+          //     },
+          //   },
+          //   {
+          //     contextPropsIntoEventProperties: [
+          //       MetaMetricsContextProp.PageTitle,
+          //     ],
+          //   },
+          // );
+          // closeMenu();
+        }}
         data-testid="global-menu-support"
       >
         {supportText}

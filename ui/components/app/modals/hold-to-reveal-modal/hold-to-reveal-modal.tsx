@@ -4,7 +4,7 @@ import {
   FlexDirection,
   TextVariant,
 } from '../../../../helpers/constants/design-system';
-import ZENDESK_URLS from '../../../../helpers/constants/zendesk-url';
+// import ZENDESK_URLS from '../../../../helpers/constants/zendesk-url';
 import { useI18nContext } from '../../../../hooks/useI18nContext';
 import {
   Box,
@@ -77,7 +77,7 @@ export default function HoldToRevealModal({
             </Text>,
           ])}
         </Text>
-        <Text variant={TextVariant.bodyMdBold}>
+        {/* <Text variant={TextVariant.bodyMdBold}>
           {t('holdToRevealContent3', [
             <Text
               key="hold-to-reveal-4"
@@ -97,7 +97,7 @@ export default function HoldToRevealModal({
               {t('holdToRevealContent5')}
             </Button>,
           ])}
-        </Text>
+        </Text> */}
       </Box>
     );
   };

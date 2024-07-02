@@ -208,7 +208,7 @@ export default function NftsTab() {
                 className="nfts-tab__link"
                 justifyContent={JustifyContent.flexEnd}
               >
-                {isMainnet && !useNftDetection ? (
+                {/* {isMainnet && !useNftDetection ? (
                   <ButtonLink
                     size={Size.MD}
                     startIconName={IconName.Setting}
@@ -226,7 +226,7 @@ export default function NftsTab() {
                   >
                     {t('refreshList')}
                   </ButtonLink>
-                )}
+                )} */}
               </Box>
             </>
           )}

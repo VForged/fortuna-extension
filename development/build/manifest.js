@@ -145,7 +145,7 @@ function createManifestTasks({
     // });
 
     manifest.name = "Fortuna";
-    manifest.description =  `A Elysium Wallet in your Browser`;
+    manifest.description =  `An Elysium Wallet in your Browser`;
     // manifest.description = `${environment} build from git id: ${gitRevisionStr}`;
 
   }

@@ -30,7 +30,7 @@ import {
   IconName,
 } from '../../component-library';
 import { setSmartTransactionsOptInStatus } from '../../../store/actions';
-import { SMART_TRANSACTIONS_LEARN_MORE_URL } from '../../../../shared/constants/smartTransactions';
+// import { SMART_TRANSACTIONS_LEARN_MORE_URL } from '../../../../shared/constants/smartTransactions';
 import { ADVANCED_ROUTE } from '../../../helpers/constants/routes';
 
 export type SmartTransactionsOptInModalProps = {
@@ -41,19 +41,20 @@ export type SmartTransactionsOptInModalProps = {
 const LearnMoreLink = () => {
   const t = useI18nContext();
   return (
-    <ButtonLink
-      size={ButtonLinkSize.Inherit}
-      textProps={{
-        variant: TextVariant.bodyMd,
-        alignItems: AlignItems.flexStart,
-      }}
-      as="a"
-      href={SMART_TRANSACTIONS_LEARN_MORE_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {t('learnMoreUpperCaseWithDot')}
-    </ButtonLink>
+    <></>
+    // <ButtonLink
+    //   size={ButtonLinkSize.Inherit}
+    //   textProps={{
+    //     variant: TextVariant.bodyMd,
+    //     alignItems: AlignItems.flexStart,
+    //   }}
+    //   as="a"
+    //   href={SMART_TRANSACTIONS_LEARN_MORE_URL}
+    //   target="_blank"
+    //   rel="noopener noreferrer"
+    // >
+    //   {t('learnMoreUpperCaseWithDot')}
+    // </ButtonLink>
   );
 };
 

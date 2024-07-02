@@ -14,7 +14,7 @@ import {
   TextVariant,
 } from '../../../helpers/constants/design-system';
 import { FormTextField } from '../../component-library/form-text-field/deprecated';
-import ZENDESK_URLS from '../../../helpers/constants/zendesk-url';
+// import ZENDESK_URLS from '../../../helpers/constants/zendesk-url';
 import { useI18nContext } from '../../../hooks/useI18nContext';
 import { displayWarning } from '../../../store/actions';
 import BottomButtons from './bottom-buttons';
@@ -51,7 +51,7 @@ export default function JsonImportSubview({
         {t('usedByClients')}
         <ButtonLink
           size={Size.inherit}
-          href={ZENDESK_URLS.IMPORTED_ACCOUNTS}
+          // href={ZENDESK_URLS.IMPORTED_ACCOUNTS}
           target="_blank"
           rel="noopener noreferrer"
         >
