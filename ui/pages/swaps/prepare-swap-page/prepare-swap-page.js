@@ -1019,28 +1019,28 @@ export default function PrepareSwapPage({
             variant={TextVariant.bodySm}
             marginTop={2}
             fontWeight={FontWeight.Normal}
-            onClick={() => {
-              const portfolioUrl = getPortfolioUrl(
-                'bridge',
-                'ext_bridge_prepare_swap_link',
-                metaMetricsId,
-              );
+            // onClick={() => {
+            //   const portfolioUrl = getPortfolioUrl(
+            //     'bridge',
+            //     'ext_bridge_prepare_swap_link',
+            //     metaMetricsId,
+            //   );
 
-              global.platform.openTab({
-                url: `${portfolioUrl}&token=${fromTokenAddress}`,
-              });
+            //   global.platform.openTab({
+            //     url: `${portfolioUrl}&token=${fromTokenAddress}`,
+            //   });
 
-              trackEvent({
-                category: MetaMetricsEventCategory.Swaps,
-                event: MetaMetricsEventName.BridgeLinkClicked,
-                properties: {
-                  location: 'Swaps',
-                  text: 'Swap across networks with MetaMask Portfolio',
-                  chain_id: chainId,
-                  token_symbol: fromTokenSymbol,
-                },
-              });
-            }}
+            //   trackEvent({
+            //     category: MetaMetricsEventCategory.Swaps,
+            //     event: MetaMetricsEventName.BridgeLinkClicked,
+            //     properties: {
+            //       location: 'Swaps',
+            //       text: 'Swap across networks with MetaMask Portfolio',
+            //       chain_id: chainId,
+            //       token_symbol: fromTokenSymbol,
+            //     },
+            //   });
+            // }}
             target="_blank"
             data-testid="prepare-swap-page-cross-chain-swaps-link"
           >

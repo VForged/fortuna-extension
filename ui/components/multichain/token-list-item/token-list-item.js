@@ -105,22 +105,22 @@ export const TokenListItem = ({
       gap={1}
       paddingInline={0}
       tabIndex="0"
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        const url = getPortfolioUrl('stake', 'ext_stake_button', metaMetricsId);
-        global.platform.openTab({ url });
-        trackEvent({
-          event: MetaMetricsEventName.StakingEntryPointClicked,
-          category: MetaMetricsEventCategory.Tokens,
-          properties: {
-            location: 'Token List Item',
-            text: 'Stake',
-            chain_id: chainId,
-            token_symbol: tokenSymbol,
-          },
-        });
-      }}
+      // onClick={(e) => {
+      //   e.preventDefault();
+      //   e.stopPropagation();
+      //   const url = getPortfolioUrl('stake', 'ext_stake_button', metaMetricsId);
+      //   global.platform.openTab({ url });
+      //   trackEvent({
+      //     event: MetaMetricsEventName.StakingEntryPointClicked,
+      //     category: MetaMetricsEventCategory.Tokens,
+      //     properties: {
+      //       location: 'Token List Item',
+      //       text: 'Stake',
+      //       chain_id: chainId,
+      //       token_symbol: tokenSymbol,
+      //     },
+      //   });
+      // }}
     >
       <Text as="span">•</Text>
       <Text as="span" color={TextColor.primaryDefault}>
