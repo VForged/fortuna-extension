@@ -195,12 +195,6 @@ const EthOverview = ({ className, showAddress }) => {
 
   // function to change URLs according to Connect ChainId Vaival
 
-
-
-
-
-
-
   // function setBridge() {
   //   if (chainId === '0x53b') {
   //     const portfolioUrl = 'https://bridge.elysiumchain.tech/';
@@ -271,79 +265,82 @@ const EthOverview = ({ className, showAddress }) => {
   //   }
   // }
 
+  // swap vaival
  const LavaSwap = ()=> {
   global.platform.openTab({
           url: `https://swap.elysiumchain.tech/`,
         });
 
  }
+// const originalSwap = ()=>{
+//    ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
+//       global.platform.openTab({
+//         url: `${mmiPortfolioUrl}/swap`,
+//       });
+//       ///: END:ONLY_INCLUDE_IF
 
-const originalSwap = ()=>{
-   ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
-      global.platform.openTab({
-        url: `${mmiPortfolioUrl}/swap`,
-      });
-      ///: END:ONLY_INCLUDE_IF
+//       ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
+//       if (isSwapsChain) {
+//         trackEvent({
+//           event: MetaMetricsEventName.NavSwapButtonClicked,
+//           category: MetaMetricsEventCategory.Swaps,
+//           properties: {
+//             token_symbol: 'ETH',
+//             location: MetaMetricsSwapsEventSource.MainView,
+//             text: 'Swap',
+//             chain_id: chainId,
+//           },
+//         });
+//         dispatch(setSwapsFromToken(defaultSwapsToken));
+//         if (usingHardwareWallet) {
+//           global.platform.openExtensionInBrowser(BUILD_QUOTE_ROUTE);
+//         } else {
+//           history.push(BUILD_QUOTE_ROUTE);
+//         }
+//       }
+//       ///: END:ONLY_INCLUDE_IF
 
-      ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-      if (isSwapsChain) {
-        trackEvent({
-          event: MetaMetricsEventName.NavSwapButtonClicked,
-          category: MetaMetricsEventCategory.Swaps,
-          properties: {
-            token_symbol: 'ETH',
-            location: MetaMetricsSwapsEventSource.MainView,
-            text: 'Swap',
-            chain_id: chainId,
-          },
-        });
-        dispatch(setSwapsFromToken(defaultSwapsToken));
-        if (usingHardwareWallet) {
-          global.platform.openExtensionInBrowser(BUILD_QUOTE_ROUTE);
-        } else {
-          history.push(BUILD_QUOTE_ROUTE);
-        }
-      }
-      ///: END:ONLY_INCLUDE_IF
+// }
+//  const setSwap = chainId === '0x53b' ? LavaSwap : originalSwap;
+//end
 
-}
 
- const setSwap = chainId === '0x53b' ? LavaSwap : originalSwap;
-
+// For Bridge vaival
 const LavaBridge = ()=>{
   const portfolioUrl = 'https://bridge.elysiumchain.tech/';
   global.platform.openTab({
-    url: `${portfolioUrl}${
-      location.pathname.includes('asset') ? '&token=native' : ''
-    }`,
+    url: portfolioUrl,
+    // url: `${portfolioUrl}${
+    //   location.pathname.includes('asset') ? '&token=native' : ''
+    // }`,
   });
 }
-
-const originalBridge = ()=> {
-  if (isBridgeChain) {
-    const portfolioUrl = getPortfolioUrl(
-      'bridge',
-      'ext_bridge_button',
-      metaMetricsId,
-    );
-    global.platform.openTab({
-      url: `${portfolioUrl}${
-        location.pathname.includes('asset') ? '&token=native' : ''
-      }`,
-    });
-    trackEvent({
-      category: MetaMetricsEventCategory.Navigation,
-      event: MetaMetricsEventName.BridgeLinkClicked,
-      properties: {
-        location: 'Home',
-        text: 'Bridge',
-        chain_id: chainId,
-        token_symbol: 'ETH',
-      },
-    });
-  }
-}
- const setBridge = chainId === '0x53b' ? LavaBridge : originalBridge;
+// const originalBridge = ()=> {
+//   if (isBridgeChain) {
+//     const portfolioUrl = getPortfolioUrl(
+//       'bridge',
+//       'ext_bridge_button',
+//       metaMetricsId,
+//     );
+//     global.platform.openTab({
+//       url: `${portfolioUrl}${
+//         location.pathname.includes('asset') ? '&token=native' : ''
+//       }`,
+//     });
+//     trackEvent({
+//       category: MetaMetricsEventCategory.Navigation,
+//       event: MetaMetricsEventName.BridgeLinkClicked,
+//       properties: {
+//         location: 'Home',
+//         text: 'Bridge',
+//         chain_id: chainId,
+//         token_symbol: 'ETH',
+//       },
+//     });
+//   }
+// }
+//  const setBridge = chainId === '0x53b' ? LavaBridge : originalBridge;
+//End
 
   return (
     <WalletOverview
@@ -488,7 +485,8 @@ const originalBridge = ()=> {
             }
             onClick={() => {
               // setSwap();
-              setSwap()
+              // setSwap()
+              LavaSwap()
               // ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
               // global.platform.openTab({
               //   url: `${mmiPortfolioUrl}/swap`,
@@ -538,7 +536,8 @@ const originalBridge = ()=> {
               label={t('bridge')}
               onClick={() => {
                 // Have added this function for bridge
-                setBridge()
+                // setBridge()
+                LavaBridge()
                 // Real code
                 // if (isBridgeChain) {
                 //   const portfolioUrl =

@@ -28,11 +28,11 @@ export default class PermissionsConnectFooter extends Component {
               key="permission-connect-footer-learn-more-link"
               size={ButtonLinkSize.Inherit}
               target="_blank"
-              onClick={() => {
-                global.platform.openTab({
-                  url: ZENDESK_URLS.USER_GUIDE_DAPPS,
-                });
-              }}
+              // onClick={() => {
+              //   global.platform.openTab({
+              //     url: ZENDESK_URLS.USER_GUIDE_DAPPS,
+              //   });
+              // }}
             >
               {t('learnMoreUpperCase')}
             </ButtonLink>,
