@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import {
   useHistory,
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  useLocation,
+  // useLocation,
   ///: END:ONLY_INCLUDE_IF
 } from 'react-router-dom';
 
@@ -20,7 +20,7 @@ import { I18nContext } from '../../../contexts/i18n';
 import {
   SEND_ROUTE,
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  BUILD_QUOTE_ROUTE,
+  // BUILD_QUOTE_ROUTE,
   ///: END:ONLY_INCLUDE_IF
 } from '../../../helpers/constants/routes';
 import Tooltip from '../../ui/tooltip';
@@ -36,16 +36,16 @@ import {
   getSelectedAccountCachedBalance,
   // getUseExternalServices,
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  getSwapsDefaultToken,
-  getCurrentKeyring,
+  // getSwapsDefaultToken,
+  // getCurrentKeyring,
   getIsBridgeChain,
   getIsBuyableChain,
-  getMetaMetricsId,
+  // getMetaMetricsId,
   ///: END:ONLY_INCLUDE_IF
 } from '../../../selectors';
 ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-import { setSwapsFromToken } from '../../../ducks/swaps/swaps';
-import { isHardwareKeyring } from '../../../helpers/utils/hardware';
+// import { setSwapsFromToken } from '../../../ducks/swaps/swaps';
+// import { isHardwareKeyring } from '../../../helpers/utils/hardware';
 ///: END:ONLY_INCLUDE_IF
 import IconButton from '../../ui/icon-button';
 import { MetaMetricsContext } from '../../../contexts/metametrics';
@@ -53,7 +53,7 @@ import {
   MetaMetricsEventCategory,
   MetaMetricsEventName,
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  MetaMetricsSwapsEventSource,
+  // MetaMetricsSwapsEventSource,
   ///: END:ONLY_INCLUDE_IF
 } from '../../../../shared/constants/metametrics';
 import Spinner from '../../ui/spinner';
@@ -63,7 +63,7 @@ import { Icon, IconName } from '../../component-library';
 import { IconColor } from '../../../helpers/constants/design-system';
 ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
 // import useRamps from '../../../hooks/experiences/useRamps';
-import { getPortfolioUrl } from '../../../helpers/utils/portfolio';
+// import { getPortfolioUrl } from '../../../helpers/utils/portfolio';
 ///: END:ONLY_INCLUDE_IF
 import { useIsOriginalNativeTokenSymbol } from '../../../hooks/useIsOriginalNativeTokenSymbol';
 import { getProviderConfig } from '../../../ducks/metamask/metamask';
@@ -76,13 +76,13 @@ const EthOverview = ({ className, showAddress }) => {
   const trackEvent = useContext(MetaMetricsContext);
   const history = useHistory();
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  const location = useLocation();
+  // const location = useLocation();
   const isBridgeChain = useSelector(getIsBridgeChain);
   const isBuyableChain = useSelector(getIsBuyableChain);
-  const metaMetricsId = useSelector(getMetaMetricsId);
-  const keyring = useSelector(getCurrentKeyring);
-  const usingHardwareWallet = isHardwareKeyring(keyring?.type);
-  const defaultSwapsToken = useSelector(getSwapsDefaultToken);
+  // const metaMetricsId = useSelector(getMetaMetricsId);
+  // const keyring = useSelector(getCurrentKeyring);
+  // const usingHardwareWallet = isHardwareKeyring(keyring?.type);
+  // const defaultSwapsToken = useSelector(getSwapsDefaultToken);
   ///: END:ONLY_INCLUDE_IF
   const balanceIsCached = useSelector(isBalanceCached);
   const showFiat = useSelector(getShouldShowFiat);
@@ -302,7 +302,7 @@ const EthOverview = ({ className, showAddress }) => {
 
 // }
 //  const setSwap = chainId === '0x53b' ? LavaSwap : originalSwap;
-//end
+// end
 
 
 // For Bridge vaival
@@ -340,7 +340,7 @@ const LavaBridge = ()=>{
 //   }
 // }
 //  const setBridge = chainId === '0x53b' ? LavaBridge : originalBridge;
-//End
+// End
 
   return (
     <WalletOverview

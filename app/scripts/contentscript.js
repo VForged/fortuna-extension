@@ -10,8 +10,8 @@ import { isManifestV3 } from '../../shared/modules/mv3.utils';
 import shouldInjectProvider from '../../shared/modules/provider-injection';
 
 // contexts
-const CONTENT_SCRIPT = 'metamask-contentscript';
-const INPAGE = 'metamask-inpage';
+const CONTENT_SCRIPT = 'fortuna-contentscript';
+const INPAGE = 'fortuna-inpage';
 const PHISHING_WARNING_PAGE = 'metamask-phishing-warning-page';
 
 // stream channels

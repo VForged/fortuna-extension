@@ -61,7 +61,7 @@ export default class ConfirmPageContainerContent extends Component {
     transactionType: PropTypes.string,
     isBuyableChain: PropTypes.bool,
     ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-    openBuyCryptoInPdapp: PropTypes.func,
+    // openBuyCryptoInPdapp: PropTypes.func,
     ///: END:ONLY_INCLUDE_IF
     ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
     noteComponent: PropTypes.node,
@@ -182,7 +182,7 @@ export default class ConfirmPageContainerContent extends Component {
       transactionType,
       isBuyableChain,
       ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-      openBuyCryptoInPdapp,
+      // openBuyCryptoInPdapp,
       ///: END:ONLY_INCLUDE_IF
       txData,
     } = this.props;
@@ -257,7 +257,7 @@ export default class ConfirmPageContainerContent extends Component {
                     <Button
                       variant={BUTTON_VARIANT.LINK}
                       size={BUTTON_SIZES.INHERIT}
-                      onClick={openBuyCryptoInPdapp}
+                      // onClick={openBuyCryptoInPdapp}
                       key={`${nativeCurrency}-buy-button`}
                     >
                       {t('buyAsset', [nativeCurrency])}

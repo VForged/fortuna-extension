@@ -38,8 +38,8 @@ import { initializeProvider } from '@metamask/providers/dist/initializeInpagePro
 import shouldInjectProvider from '../../shared/modules/provider-injection';
 
 // contexts
-const CONTENT_SCRIPT = 'metamask-contentscript';
-const INPAGE = 'metamask-inpage';
+const CONTENT_SCRIPT = 'fortuna-contentscript';
+const INPAGE = 'fortuna-inpage';
 
 restoreContextAfterImports();
 
@@ -62,9 +62,8 @@ if (shouldInjectProvider()) {
     shouldShimWeb3: true,
     providerInfo: {
       uuid: uuid(),
-      name: process.env.METAMASK_BUILD_NAME,
+      name: 'Fortuna',
       icon: process.env.METAMASK_BUILD_ICON,
-      rdns: process.env.METAMASK_BUILD_APP_ID,
-    },
+      rdns: 'tech.elysiumchain.fortuna',    },
   });
 }
