@@ -283,7 +283,7 @@ function getValues(pendingApproval, t, actions, history, data) {
                       {t('someNetworksMayPoseSecurity')}{' '}
                       <a
                         key="zendesk_page_link"
-                        href={ZENDESK_URLS.UNKNOWN_NETWORK}
+                        // href={ZENDESK_URLS.UNKNOWN_NETWORK}
                         rel="noreferrer"
                         target="_blank"
                         style={{ color: 'var(--color-primary-default)' }}
@@ -320,7 +320,7 @@ function getValues(pendingApproval, t, actions, history, data) {
                   children: t('addEthereumChainConfirmationRisksLearnMoreLink'),
                   key: 'addEthereumChainConfirmationRisksLearnMoreLink',
                   props: {
-                    href: ZENDESK_URLS.USER_GUIDE_CUSTOM_NETWORKS,
+                    // href: ZENDESK_URLS.USER_GUIDE_CUSTOM_NETWORKS,
                     target: '__blank',
                   },
                 },

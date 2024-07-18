@@ -39,7 +39,7 @@ export default function DeprecatedNetworks() {
       padding={4}
       borderRadius={BorderRadius.SM}
     >
-      <BannerAlert
+      {/* <BannerAlert
         severity={Severity.Warning}
         description={bannerAlertDescription}
         onClose={() => setIsShowingWarning(false)}
@@ -50,7 +50,7 @@ export default function DeprecatedNetworks() {
           variant: ButtonLink,
           externalLink: true,
         }}
-      />
+      /> */}
     </Box>
   ) : null;
 }

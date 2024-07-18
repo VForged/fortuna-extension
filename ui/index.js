@@ -189,12 +189,15 @@ const addElysiumNetwork = async (store) => {
  }
 };
 
-// Polygon Chainsss
+// Polygon Chain
+const infuraProjectId = process.env.INFURA_PROJECT_ID;
+
   const addPolygonNetwork = async (store) => {
     let polygonCustomNetwork = await localforage.getItem(IS_MATIC_SET_AS_DEFAULT_NETWORK);
     if (polygonCustomNetwork === null) {
       const networkConfiguration = {
-        rpcUrl: 'https://polygon-rpc.com',
+        // rpcUrl: 'https://polygon-rpc.com',
+        rpcUrl: `https://polygon-mainnet.infura.io/v3/${infuraProjectId}`,
         chainId: '0x89',
         ticker: 'MATIC',
         nickname: 'Polygon Mainnet',
