@@ -10,14 +10,17 @@ export default function LoadingIndicator({
   ...props
 }) {
   return isLoading ? (
-    <Box className="loading-indicator" {...props}>
-      <img
-        className="loading-indicator__spinner"
-        alt={alt}
-        title={title}
-        src="images/loading.svg"
-      />
-    </Box>
+    //Real
+    // <Box className="loading-indicator" {...props}>
+    //   <img
+    //     className="loading-indicator__spinner"
+    //     alt={alt}
+    //     title={title}
+    //     src="images/loading.svg"
+    //   />
+    // </Box>
+    //End
+    children //vaival
   ) : (
     children
   );

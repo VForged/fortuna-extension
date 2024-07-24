@@ -265,13 +265,17 @@ const EthOverview = ({ className, showAddress }) => {
   //   }
   // }
 
-  // swap vaival
- const LavaSwap = ()=> {
-  global.platform.openTab({
-          url: `https://swap.elysiumchain.tech/`,
-        });
+  // swap vaival external
+//  const LavaSwap = ()=> {
+//   global.platform.openTab({
+//           url: `https://swap.elysiumchain.tech/`,
+//         });
 
- }
+//  }
+  // swap vaival internal
+ const LavaSwap = () => {
+  window.location.href = "https://swap.elysiumchain.tech/";
+}
 // const originalSwap = ()=>{
 //    ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
 //       global.platform.openTab({

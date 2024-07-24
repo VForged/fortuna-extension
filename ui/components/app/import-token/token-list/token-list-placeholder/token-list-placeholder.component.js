@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ZENDESK_URLS from '../../../../../helpers/constants/zendesk-url';
+// import ZENDESK_URLS from '../../../../../helpers/constants/zendesk-url';
 import { ButtonLink, Text, Box } from '../../../../component-library';
 import {
   Display,
@@ -26,7 +26,9 @@ export default class TokenListPlaceholder extends Component {
         <Text color={TextColor.textAlternative}>
           {this.context.t('addAcquiredTokens')}
         </Text>
-        <ButtonLink href={ZENDESK_URLS.ADD_CUSTOM_TOKENS} externalLink>
+        <ButtonLink
+        // href={ZENDESK_URLS.ADD_CUSTOM_TOKENS} externalLink
+        >
           {this.context.t('learnMoreUpperCase')}
         </ButtonLink>
       </Box>

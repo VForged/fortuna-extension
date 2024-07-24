@@ -12,7 +12,7 @@ import {
   BackgroundColor,
 } from '../../../../helpers/constants/design-system';
 import { DEFAULT_ROUTE } from '../../../../helpers/constants/routes';
-import ZENDESK_URLS from '../../../../helpers/constants/zendesk-url';
+// import ZENDESK_URLS from '../../../../helpers/constants/zendesk-url';
 import { jsonRpcRequest } from '../../../../../shared/modules/rpc.utils';
 
 const UNRECOGNIZED_CHAIN = {
@@ -57,7 +57,7 @@ const MISMATCHED_CHAIN_RECOMMENDATION = {
             element: 'a',
             key: 'mismatchedChainLink',
             props: {
-              href: ZENDESK_URLS.VERIFY_CUSTOM_NETWORK,
+              // href: ZENDESK_URLS.VERIFY_CUSTOM_NETWORK,
               target: '__blank',
               tabIndex: 0,
             },
