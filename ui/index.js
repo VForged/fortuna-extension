@@ -219,8 +219,8 @@ const infuraProjectId = process.env.INFURA_PROJECT_ID;
    }
 
    const addAtlantisTestNetwork = async (store) => {
-    // let AtlantisCustomNetwork = await localforage.getItem(IS_ATLANTIS_AS_TESTNET);
-    // if (AtlantisCustomNetwork === null) {
+    let AtlantisCustomNetwork = await localforage.getItem(IS_ATLANTIS_AS_TESTNET);
+    if (AtlantisCustomNetwork === null) {
       const networkConfiguration = {
         rpcUrl: `https://rpc.atlantischain.network/`,
         chainId: '0x53a',
@@ -238,8 +238,8 @@ const infuraProjectId = process.env.INFURA_PROJECT_ID;
           source: 'custom_network_form',
         }),
       );
-      // await localforage.setItem(IS_ATLANTIS_AS_TESTNET, JSON.stringify(true));
-    // }
+      await localforage.setItem(IS_ATLANTIS_AS_TESTNET, JSON.stringify(true));
+    }
    }
 
 
