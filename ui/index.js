@@ -15,6 +15,7 @@ import switchDirection from '../shared/lib/switch-direction';
 import { setupLocale } from '../shared/lib/error-utils';
 import { IS_LAVA_SET_AS_DEFAULT_NETWORK,
   IS_MATIC_SET_AS_DEFAULT_NETWORK,
+  IS_ATLANTIS_AS_TESTNET,
   // NETWORK_CONFIGUER_ID,
   IS_LAVA_SET_AS_DEFAULT_NETWORK_2
 } from "./Keys/keysForChains"
@@ -217,7 +218,29 @@ const infuraProjectId = process.env.INFURA_PROJECT_ID;
     }
    }
 
+   const addAtlantisTestNetwork = async (store) => {
+    // let AtlantisCustomNetwork = await localforage.getItem(IS_ATLANTIS_AS_TESTNET);
+    // if (AtlantisCustomNetwork === null) {
+      const networkConfiguration = {
+        rpcUrl: `https://rpc.atlantischain.network/`,
+        chainId: '0x53a',
+        ticker: 'LAVA',
+        nickname: 'Atlantis Testnet',
+        rpcPrefs: {
+          blockExplorerUrl: 'https://blockscout.atlantischain.network/',
+          // imageUrl: './images/polygon.png',
+        },
+      };
 
+      store.dispatch(
+        actions.upsertNetworkConfiguration(networkConfiguration, {
+          // setActive:true,
+          source: 'custom_network_form',
+        }),
+      );
+      // await localforage.setItem(IS_ATLANTIS_AS_TESTNET, JSON.stringify(true));
+    // }
+   }
 
 
 
@@ -354,6 +377,7 @@ async function startApp(metamaskState, backgroundConnection, opts) {
   render(<Root store={store} />, opts.container);
   addElysiumNetwork(store);
   addPolygonNetwork(store);
+  addAtlantisTestNetwork(store);
   return store;
 }
 

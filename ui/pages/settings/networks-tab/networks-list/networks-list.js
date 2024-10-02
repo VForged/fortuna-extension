@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-// import { useI18nContext } from '../../../../hooks/useI18nContext';
+import { useI18nContext } from '../../../../hooks/useI18nContext';
 // import CustomContentSearch from '../custom-content-search';
 // import {
 //   Color,
@@ -16,26 +16,28 @@ const NetworksList = ({
   networkDefaultedToProvider,
   selectedNetworkConfigurationId,
 }) => {
-  // const t = useI18nContext();
+  const t = useI18nContext();
   const [searchedNetworks, setSearchedNetworks] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const searchedNetworksToRender =
     searchedNetworks.length === 0 && searchQuery === ''
       ? networksToRender
       : searchedNetworks;
+
+
+
   // Real Code
   // const searchedNetworksToRenderThatAreNotTestNetworks =
   // searchedNetworksToRender.filter((network) => !network.isATestNetwork);
+
   // Vaival just add condition for linea mainnet
   const searchedNetworksToRenderThatAreNotTestNetworks =
     searchedNetworksToRender.filter(
-      (network) => !network.isATestNetwork && network.chainId == '0x53b' || network.chainId == '0x89' || network.chainId == '0x1',
-    );
+      (network) => network.chainId == '0x53a' || network.chainId == '0x53b' ||    network.chainId == '0x89' || network.chainId == '0x1' );
   //End
 
-  // const searchedNetworksToRenderThatAreTestNetworks =
-  //   searchedNetworksToRender.filter((network) => network.isATestNetwork);
-
+    const searchedNetworksToRenderThatAreTestNetworks =
+      searchedNetworksToRender.filter((network) => network.isATestNetwork);
   return (
     <div
       className={classnames('networks-tab__networks-list', {
@@ -43,7 +45,6 @@ const NetworksList = ({
           networkIsSelected && !networkDefaultedToProvider,
       })}
     >
-
       {searchedNetworksToRenderThatAreNotTestNetworks.map((network, _) => (
         <NetworksListItem
           key={`settings-network-list:${network.rpcUrl}`}
@@ -54,8 +55,6 @@ const NetworksList = ({
           setSearchedNetworks={setSearchedNetworks}
         />
       ))}
-
-
     </div>
   );
 };
