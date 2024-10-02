@@ -36,8 +36,8 @@ const NetworksList = ({
       (network) => network.chainId == '0x53a' || network.chainId == '0x53b' ||    network.chainId == '0x89' || network.chainId == '0x1' );
   //End
 
-    const searchedNetworksToRenderThatAreTestNetworks =
-      searchedNetworksToRender.filter((network) => network.isATestNetwork);
+    // const searchedNetworksToRenderThatAreTestNetworks =
+    //   searchedNetworksToRender.filter((network) => network.isATestNetwork);
   return (
     <div
       className={classnames('networks-tab__networks-list', {

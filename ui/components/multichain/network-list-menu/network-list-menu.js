@@ -125,7 +125,6 @@ export const NetworkListMenu = ({ onClose }) => {
 
     );
   });
-  console.log("hello",networksList)
   const [items, setItems] = useState([...networksList]);
 
   useEffect(() => {
