@@ -60,4 +60,9 @@
   }
 }
 
-
+.editable-label {
+  .mm-text-field,
+  .mm-text-field:focus-visible {
+    outline: none;
+  }
+}
