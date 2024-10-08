@@ -35,8 +35,8 @@
 @import '@metamask/design-tokens/src/css/design-tokens';
 
 :root, [data-theme=light] {
-  --color-background-default: #140533;
-  --color-background-alternative: #241446;
+  --color-background-default: #1A1920;
+  --color-background-alternative: #292731;
   --color-primary-alternative: #9FC131;
   --color-secondary-default: #9FC131;
   --color-primary-muted: #9fc13140;
@@ -45,14 +45,14 @@
   --color-primary-default: #9FC131;
   --color-primary-inverse: #ffffff;
   --color-primary-shadow:#9FC13133;
-  --color-border-muted:#3B2864;
+  --color-border-muted:#848E9C;
 }
 
 .bg-dark-purple {
-  background-color: #140533;
+  background-color: #1A1920;
 }
 .bg-light-purple {
-  background-color: #3B2864;
+  background-color: #848E9C;
 }
 .primary-green-color {
   span {

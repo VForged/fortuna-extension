@@ -56,8 +56,8 @@ const colorsDark = {
     base: lightTheme.colors.primary.inverse,
   },
   active: {
-    base: darkTheme.colors.primary.default,
-    hover: darkTheme.colors.primary.defaultHover,
+    base: '#424a55',
+    hover: '#424a55',
   },
   inactive: {
     base: darkTheme.colors.icon.muted,
